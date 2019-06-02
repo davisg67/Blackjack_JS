@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Blackjack</title>
+    <meta name="description" content="Blackjack Game">
+    <meta name="author" content="Gregory Davis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+
+    <!-- <button id="new-game-button" class="button">New Game!</button> -->
+
+
+  </head>
+
+  <body>
+    <div id="page-wrap">
+        <nav>
+            <!-- <a id="developer" href="https://davisg67.github.io/" target="_blank">By Gregory Davis</a> -->
+            <a id="new-game-link" href="#" >New Game</a>
+            
+            <span id="scores-section">
+                <!-- <span id="dealer-wins-span">Dealer Wins!</span> -->
+                <span>Dealer:</span>
+                <span id="dealer-score-span">00</span>
+
+                
+                <span>Player:</span>
+                <span id="player-score-span">00</span>
+                <!-- <span id="player-wins-span">Player Wins!</span> -->
+            </span>
+
+            <!-- <a id="rules" href="#Rules">How to Play</a>  -->
+        </nav> 
+
+        
+        <div class="col-wrap">
+            <div class="col-left">
+                <div id="title-section">
+                    <h1 id="title">Blackjack</h1>   
+                </div>
+
+                <div>
+                    <a id="new-game-link-sub" href="#" >New Game</a>
+                    <a id="rules" href="rules.html" target="_blank">How to Play</a>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div id="card-area">
+                    <div class="player-desg">
+                        <h4>Dealer</h4>
+                    </div>
+                    
+                    <div id="dealer-area" class="play-area"></div>
+            
+            
+                    <div class="player-desg">
+                        <h4>Player</h4>
+                    </div>
+                    
+                    <div id="player-area" class="play-area"></div>
+            
+            
+                    <div id="play-buttons">
+                        <button id="hit-button" class="button game-button">Hit!</button>
+                        <button id="stay-button" class="button game-button">Stay</button>
+                    </div>
+                </div>
+                
+                <div id="winner-section">
+                    <h2 id="winner-text"></h2>
+                </div>
+
+               
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="https://davisg67.github.io/" target="_blank">Developed By: Gregory Davis</a></p>
+        </footer> 
+    </div>  
+    
+    <script src="scripts/Deck.js"></script> 
+    <script src="scripts/blackjack.js"></script>
+  </body>
+
+</html>

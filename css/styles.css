@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #001a09; 
+}
+
+#title-section {
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    color: #ffffff;
+}
+
+
+/********************************** Navigation *******************************************/
+nav {
+    padding: 15px 20px 0 20px;
+    text-align: center; 
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #001a09;
+  }
+
+nav a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: yellowgreen;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/********************************** Scoring *******************************************/
+#scores-section {
+    color: yellow;  
+}
+
+#dealer-score-span {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#player-score-span {
+    margin-left: 10px;
+}
+
+#winner-section {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #001a09;
+    opacity: .8;
+    line-height: 200px;
+    text-align: center;
+    color: yellow;
+    z-index: 100;
+} 
+
+
+/********************************** Links *******************************************/
+#new-game-link {
+    float: left;
+}
+
+#new-game-link-sub {
+    float: left;
+    margin-left: 20px; 
+    margin-right: 20px;
+    display: none;
+}
+
+#rules {
+    float: left; 
+    margin-left: 20px; 
+}
+
+
+/********************************** Column Layout *******************************************/
+#page-wrap {
+    width: 100%;
+    height: 650px;
+    background-image: url('../images/blackjack_img.jpg'); /* https://bps.hs.llnwd.net/e2/v2/common/Common/Common/neutral/image/2017/03/game.netentBlackjack3Hand.backgroundimage_v3.jpg */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.col-wrap {
+    width: 100%;
+    height: 600px;
+}
+
+.col-left {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.col-left a {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.col-right {
+    /* overflow: hidden; */
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+
+
+
+/********************************** Card Play Area *******************************************/
+#card-area {
+    padding-left: 80px; 
+    padding-top: 120px;
+}
+
+.player-desg {
+    color: #f2f2f2;
+}
+
+.play-area {
+    color: #f2f2f2;
+    position: relative;
+    margin-top: 10px;
+}
+
+ .card {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #000000;
+    display:inline-block; 
+    margin-left: -50px; 
+    position: relative;
+    left: 0;
+    top: 0; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%; 
+} 
+
+/********************************** Game Buttons *******************************************/
+#play-buttons {
+    margin-top: 15px;
+    margin-left: -50px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    border: 1px solid #001a09;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.8;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+}
+
+.button:hover {
+    background-color: #409c69;
+    border: 1px solid #001a09;
+    opacity: 1;
+    color: #f2f2f2;
+}
+
+.game-button {
+    width: 75px;
+}
+
+#stay-button {
+    margin-left: 10px;
+}
+
+
+/********************************** Footer *******************************************/
+footer {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+footer a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+
+
+/********************************** Responsive Design *******************************************/
+
+@media all and (max-width: 900px) {
+   .col-left {
+       float: none;
+       width: 100%;
+       height: 100px;
+   }
+
+   .col-right {
+        float: none;
+        width: 100%;
+        height: 550px;
+   }
+
+   #card-area {
+        padding-top: 40px;
+    }
+
+    #play-buttons {
+        margin-top: 10px;
+    }
+
+    #new-game-link {
+        display: none;
+    }
+    
+    #new-game-link-sub {
+        display: inline;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .col-wrap {
+        height: 750px;
+    }
+} 
+
+
+
+
+
+  
+
+   
